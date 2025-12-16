@@ -2,13 +2,14 @@
 ####          Script used to generate optimization plots (Figure 3)              ####
 #### Goals: Identify over-amplifiers &  Check uniformity of amplification        ####
 #####################################################################################
-#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #Use the GTscore perl script AmpliconReadCounter.pl to extract the data
 # Download link - https://github.com/gjmckinney/GTscore 
-#Reference:Garrett J. McKinney, Carita E. Pascal, William D. Templin, Sara E. Gilk-Baumer, 
+# Reference for GTscore package:Garrett J. McKinney, Carita E. Pascal, William D. Templin, Sara E. Gilk-Baumer, 
 # Tyler H. Dann, Lisa W. Seeb, and James E. Seeb. 2020. Dense SNP panels resolve closely 
 # related Chinook salmon populations. Canadian Journal of Fisheries and Aquatic Sciences. 
 # 77(3): 451-461. https://doi.org/10.1139/cjfas-2019-0067
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #Packages required
 library(dplyr)
@@ -272,3 +273,4 @@ plot
 # file_path
 
 #Repeat with other optimization rounds. 
+
