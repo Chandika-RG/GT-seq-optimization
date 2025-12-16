@@ -10,7 +10,7 @@ library(ggrepel)
 library(dplyr)
 
 #Load data
-load("./Figure_6_PCA_geno.RData")
+load("./Rdata/Figure_6_PCA_geno.RData")
 head(genepop_data)
 
 ########################################################
@@ -101,6 +101,7 @@ plot <- ggplot(
   )
 
 plot 
+
 
 
 
