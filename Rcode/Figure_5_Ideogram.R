@@ -25,7 +25,7 @@ library(openxlsx2)
 library(dplyr)
 
 #Import the data
-data <- load("Rdata/Ideogram_input.RData") # All locus information required for plotting
+data <- load("Rdata/Figure_5_Ideogram_input.RData") # All locus information required for plotting
 
 head(Loc_all)
 
@@ -91,6 +91,7 @@ kpPoints(kp, data=data.points, y= data.points$CWD_captive, pch=23, cex=1.5, col=
 # 
 # # Close the graphics device to save the plot
 # dev.off()
+
 
 
 
