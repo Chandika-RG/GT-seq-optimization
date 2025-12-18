@@ -19,7 +19,7 @@ library(ggplot2)
 #For the optimization plot we require the GTscore_locusSummary.txt from the perl script output
 
 #Load the data associated with the figure in the manuscript use - 
-load("./Rdata/all_rounds_locus_summary.RData") #six data.frame object will load, each indicating locusSummary for an optimization round.
+load("./Rdata/Figure3_optimization_plot.RData") #six data.frame object will load, each indicating locusSummary for an optimization round.
 # GTscore_locusSummary_Opt1
 # GTscore_locusSummary_Opt2a
 # GTscore_locusSummary_Opt2b
@@ -33,9 +33,11 @@ load("./Rdata/all_rounds_locus_summary.RData") #six data.frame object will load,
 # 1. Pick an optimization round to plot
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-opt_round <- "Opt #" #Change the opt round; will remain in the optimization plot
+opt_round <- "Opt #" #Change the opt round. This will be indicated on the optimization plot
+#Choose one - Opt 1; Opt 2a; Opt 2b; Opt 3; Opt 4; Opt 5
 
-# Choose an optimization round to plot -
+
+# Choose an optimization round data to plot and indicate it on line 46 -
 # GTscore_locusSummary_Opt1
 # GTscore_locusSummary_Opt2a
 # GTscore_locusSummary_Opt2b
@@ -43,7 +45,7 @@ opt_round <- "Opt #" #Change the opt round; will remain in the optimization plot
 # GTscore_locusSummary_Opt4
 # GTscore_locusSummary_Opt5
 
-GTScore_locussummary <- GTscore_locusSummary_Opt1 #To streamline the plotting and reusing the code, only change the Opt# on this line
+GTScore_locussummary <- GTscore_locusSummary_Opt1 #To streamline the plotting and reusing the code, only change the # on "GTscore_locusSummary_Opt#" 
 
 #If importing from text file of your extracted data
 # GTScore_locussummary <- read.delim("GTScore_locussummary.txt",header=TRUE) 
@@ -273,4 +275,5 @@ plot
 # file_path
 
 #Repeat with other optimization rounds. 
+
 
