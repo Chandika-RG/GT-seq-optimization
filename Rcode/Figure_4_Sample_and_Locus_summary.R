@@ -5,7 +5,7 @@
 
 
 #Import data and required packages
-load("./Rdata/Genotyping_summary.RData") #Locus and sample genotyping summary from all rounds 
+load("./Rdata/Figure_4_Genotyping_summary.RData") #Locus and sample genotyping summary from all rounds 
 
 library(readxl)
 library(ggplot2)
@@ -69,4 +69,5 @@ plot_indiv <- ggplot(All_individual_summary, aes(x = OptRound, y = PrimerProbePr
   scale_y_continuous(labels = comma)
 
 plot_indiv
+
 
